@@ -43,6 +43,8 @@ dd {
 ul[role="list"],
 ol[role="list"] {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* Set core root defaults */
@@ -90,5 +92,41 @@ select {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
+    }
+}
+
+/* ----- General styles ----- */
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+section {
+    padding: 5em 0;
+}
+
+/* ----- Utility classes ----- */
+.container {
+    max-width: var(--container-width, 60rem);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.flow > * + * {
+    margin-top: var(--flow-space, 1em);
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--flex-gap, 2em);
+}
+
+@media (min-width: 40rem) {
+    .flex {
+        flex-direction: row;
     }
 }

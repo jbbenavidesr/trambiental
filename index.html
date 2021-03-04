@@ -24,16 +24,18 @@
                 <h1>Tu asesor legal online para cualquier trámite ambiental</h1>
                 <img src="/assets/images/Logo.svg" alt="" />
             </div>
-            <a href="#inicioAsesoria" class="btn">Inicia tu asesoría</a>
+            <a href="#steps" class="btn">Inicia tu asesoría</a>
         </section>
         <section class="instructions">
             <div class="container">
                 <header class="visually-hidden">
-                    <h2>¿Cómo puedo recibir mi asesoría?</h2>
+                    <h2 tabindex="-1" id="steps">
+                        ¿Cómo puedo recibir mi asesoría?
+                    </h2>
                 </header>
                 <div>
                     <ol class="split" role="list">
-                        <li class="flow">
+                        <li class="card flow">
                             <img src="/assets/images/search-lg.svg" alt="" />
                             <div class="number">1</div>
                             <p>
@@ -42,7 +44,7 @@
                                 illum architecto temporibus fugiat animi.
                             </p>
                         </li>
-                        <li class="flow">
+                        <li class="card flow">
                             <img
                                 src="/assets/images/download-document.svg"
                                 alt=""
@@ -56,7 +58,7 @@
                                 rerum.
                             </p>
                         </li>
-                        <li class="flow">
+                        <li class="card flow">
                             <img src="/assets/images/chat-lawyer.svg" alt="" />
                             <div class="number">3</div>
                             <p>
@@ -73,9 +75,7 @@
         <section class="documents bg-primary-300">
             <div class="container">
                 <header class="visually-hidden">
-                    <h2 tabindex="-1" id="inicioAsesoria">
-                        Busca el documento que necesitas
-                    </h2>
+                    <h2>Busca el documento que necesitas</h2>
                 </header>
                 <input type="search" name="searchDocument" id="" />
                 <div class="icon">
@@ -115,7 +115,23 @@
         <!-- Clip path for the header -->
         <svg width="0" height="0" class="visually-hidden">
             <defs>
-                <clipPath id="myCurve" clipPathUnits="objectBoundingBox">
+                <clipPath
+                    id="headerPathSmall"
+                    clipPathUnits="objectBoundingBox"
+                >
+                    <path
+                        d="M 1 0.5
+                            s -0.15 -0.149
+                              -0.317 -0.137 
+                            S 0.266 0.57 
+                              0 0.57 
+                            V 0 
+                            H 1 
+                            Z"
+                    />
+                </clipPath>
+
+                <clipPath id="headerPathBig" clipPathUnits="objectBoundingBox">
                     <path
                         d="M 1 0.5
                             s -0.15 -0.249

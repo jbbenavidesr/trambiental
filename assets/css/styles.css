@@ -11,7 +11,8 @@
     --fw-700: 700;
     --fw-600: 600;
 
-    --fs-400: 1rem;
+    --fs-400: 1.25rem;
+    --fs-500: 1.5rem;
     --fs-600: 1.75rem;
     --fs-700: 2.5rem;
     --fs-900: 5rem;
@@ -19,7 +20,6 @@
 
 @media (min-width: 40rem) {
     :root {
-        --fs-400: 1.25rem;
         --fs-600: 2.5rem;
         --fs-700: 3.5rem;
         --fs-900: 7.5rem;
@@ -107,14 +107,21 @@ select {
 /* ----- General styles ----- */
 body {
     font-family: "Montserrat", sans-serif;
+    font-size: var(--fs-400);
 }
 
 section {
     padding: 5em 0;
 }
 
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+}
+
 h1 {
-    font-size: var(--fs-400);
+    font-size: var(--fs-500);
     font-weight: var(--fw-700);
 }
 
@@ -215,8 +222,8 @@ h1 {
 }
 
 .primary-header__inner {
-    padding: 1em 1em 4em;
-    clip-path: url(#myCurve);
+    padding: 1em 1em 5em;
+    clip-path: url(#headerPathSmall);
 }
 
 .logo span {
@@ -225,6 +232,11 @@ h1 {
 
 .hero {
     height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30vh auto auto;
+    grid-gap: 1em;
+    align-items: center;
 
     background-image: url("/assets/images/bg-hero-sm.png");
     background-size: cover;
@@ -232,16 +244,57 @@ h1 {
 }
 
 .hero__content {
-    padding: 3em;
+    grid-row: 2;
+    opacity: 0.8;
+    padding: 2em;
+
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 2em;
-    border-radius: 0 20em 20em 0;
 }
 
 .hero__content img {
-    max-width: 5em;
+    max-width: 4em;
+}
+
+.hero .btn {
+    grid-row: 3;
+    justify-self: center;
+}
+
+@media (min-width: 40rem) {
+    .primary-header__inner {
+        padding-bottom: 4em;
+        clip-path: url(#headerPathBig);
+    }
+
+    .hero {
+        grid-template-columns: 4fr 3fr;
+        grid-template-rows: 50% auto minmax(1em, 1fr);
+        grid-gap: 4rem;
+    }
+
+    .hero__content {
+        grid: 2/1;
+        border-radius: 0 20rem 20rem 0;
+        opacity: 1;
+        justify-content: flex-end;
+    }
+
+    .hero__content h1 {
+        flex-basis: 20ch;
+    }
+
+    .hero .btn {
+        grid-row: 2;
+        grid-column: 2;
+        align-self: end;
+        justify-self: start;
+    }
+}
+
+.card .number {
+    font-size: var(--fs-900);
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-300);
 }
 
 .primary-footer {

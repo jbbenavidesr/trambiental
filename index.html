@@ -16,7 +16,9 @@
     <body>
         <header class="primary-header">
             <div class="primary-header__inner bg-primary-400">
-                <p class="logo">Tr<span>am</span>biental</p>
+                <a href="/" class="home-link">
+                    <p class="logo">Tr<span>am</span>biental</p></a
+                >
             </div>
         </header>
         <section class="hero">
@@ -26,17 +28,19 @@
             </div>
             <a href="#steps" class="btn">Inicia tu asesoría</a>
         </section>
-        <section class="instructions">
+        <section class="instructions" tabindex="-1" id="steps">
             <div class="container">
                 <header class="visually-hidden">
-                    <h2 tabindex="-1" id="steps">
-                        ¿Cómo puedo recibir mi asesoría?
-                    </h2>
+                    <h2>¿Cómo puedo recibir mi asesoría?</h2>
                 </header>
                 <div>
                     <ol class="split" role="list">
                         <li class="card flow">
-                            <img src="/assets/images/search-lg.svg" alt="" />
+                            <img
+                                src="/assets/images/search-lg.svg"
+                                alt=""
+                                class="icon"
+                            />
                             <div class="number">1</div>
                             <p>
                                 Lorem ipsum, dolor sit amet consectetur
@@ -48,6 +52,7 @@
                             <img
                                 src="/assets/images/download-document.svg"
                                 alt=""
+                                class="icon"
                             />
                             <div class="number">2</div>
                             <p>
@@ -59,7 +64,11 @@
                             </p>
                         </li>
                         <li class="card flow">
-                            <img src="/assets/images/chat-lawyer.svg" alt="" />
+                            <img
+                                src="/assets/images/chat-lawyer.svg"
+                                alt=""
+                                class="icon"
+                            />
                             <div class="number">3</div>
                             <p>
                                 Lorem ipsum, dolor sit amet consectetur
@@ -84,16 +93,28 @@
 
                 <div class="document-container">
                     <ul class="auto-grid text-center" role="list">
-                        <li>
-                            <img src="/assets/images/doc.svg" alt="" />
+                        <li class="card flow">
+                            <img
+                                src="/assets/images/doc.svg"
+                                alt=""
+                                class="icon"
+                            />
                             <h3>Lorem, ipsum.</h3>
                         </li>
-                        <li>
-                            <img src="/assets/images/doc.svg" alt="" />
+                        <li class="card flow">
+                            <img
+                                src="/assets/images/doc.svg"
+                                alt=""
+                                class="icon"
+                            />
                             <h3>Lorem, ipsum.</h3>
                         </li>
-                        <li>
-                            <img src="/assets/images/doc.svg" alt="" />
+                        <li class="card flow">
+                            <img
+                                src="/assets/images/doc.svg"
+                                alt=""
+                                class="icon"
+                            />
                             <h3>Lorem ipsum dolor sit.</h3>
                         </li>
                     </ul>

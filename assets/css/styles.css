@@ -165,7 +165,7 @@ h1 {
 .auto-grid {
     display: grid;
     justify-items: center;
-    grid-gap: 1rem;
+    grid-gap: 3rem;
 }
 
 @supports (width: min(var(--grid-size, 15rem), 100%)) {
@@ -323,6 +323,36 @@ h1 {
     font-size: var(--fs-900);
     font-weight: var(--fw-700);
     color: var(--clr-primary-300);
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    height: 3em;
+    border: none;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    appearance: none;
+}
+
+.search-bar input::placeholder {
+    color: var(--clr-primary-400);
+}
+
+.search-bar .icon {
+    position: absolute;
+    color: var(--clr-primary-300);
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .primary-footer {

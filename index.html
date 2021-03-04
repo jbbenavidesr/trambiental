@@ -86,10 +86,37 @@
                 <header class="visually-hidden">
                     <h2>Busca el documento que necesitas</h2>
                 </header>
-                <input type="search" name="searchDocument" id="" />
-                <div class="icon">
-                    <img src="/assets/images/search-sm.svg" alt="" />
-                </div>
+                <form
+                    onsubmit="event.preventDefault();"
+                    role="search"
+                    class="search-bar"
+                >
+                    <label for="search" class="visually-hidden"
+                        >Buscar documento</label
+                    >
+                    <input
+                        type="search"
+                        name="searchDocument"
+                        id="searchBar"
+                        placeholder="Busca el documento que necesitas"
+                    />
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        class="icon"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-search"
+                    >
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </form>
 
                 <div class="document-container">
                     <ul class="auto-grid text-center" role="list">
@@ -108,6 +135,30 @@
                                 class="icon"
                             />
                             <h3>Lorem, ipsum.</h3>
+                        </li>
+                        <li class="card flow">
+                            <img
+                                src="/assets/images/doc.svg"
+                                alt=""
+                                class="icon"
+                            />
+                            <h3>Lorem ipsum dolor sit.</h3>
+                        </li>
+                        <li class="card flow">
+                            <img
+                                src="/assets/images/doc.svg"
+                                alt=""
+                                class="icon"
+                            />
+                            <h3>Lorem ipsum dolor sit.</h3>
+                        </li>
+                        <li class="card flow">
+                            <img
+                                src="/assets/images/doc.svg"
+                                alt=""
+                                class="icon"
+                            />
+                            <h3>Lorem ipsum dolor sit.</h3>
                         </li>
                         <li class="card flow">
                             <img

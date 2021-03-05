@@ -43,6 +43,8 @@
             content="/assets/images/favicon/browserconfig.xml"
         />
         <meta name="theme-color" content="#ffffff" />
+
+        <script defer src="/assets/js/main.js"></script>
     </head>
     <body>
         <header class="primary-header">
@@ -151,53 +153,18 @@
 
                 <div class="document-container">
                     <ul class="auto-grid text-center" role="list">
-                        <li class="card flow">
-                            <img
-                                src="/assets/images/doc.svg"
-                                alt=""
-                                class="icon"
-                            />
-                            <h3>Lorem, ipsum.</h3>
-                        </li>
-                        <li class="card flow">
-                            <img
-                                src="/assets/images/doc.svg"
-                                alt=""
-                                class="icon"
-                            />
-                            <h3>Lorem, ipsum.</h3>
-                        </li>
-                        <li class="card flow">
-                            <img
-                                src="/assets/images/doc.svg"
-                                alt=""
-                                class="icon"
-                            />
-                            <h3>Lorem ipsum dolor sit.</h3>
-                        </li>
-                        <li class="card flow">
-                            <img
-                                src="/assets/images/doc.svg"
-                                alt=""
-                                class="icon"
-                            />
-                            <h3>Lorem ipsum dolor sit.</h3>
-                        </li>
-                        <li class="card flow">
-                            <img
-                                src="/assets/images/doc.svg"
-                                alt=""
-                                class="icon"
-                            />
-                            <h3>Lorem ipsum dolor sit.</h3>
-                        </li>
-                        <li class="card flow">
-                            <img
-                                src="/assets/images/doc.svg"
-                                alt=""
-                                class="icon"
-                            />
-                            <h3>Lorem ipsum dolor sit.</h3>
+                        <li
+                            class="document-file card flow"
+                            data-file="link-to-file"
+                        >
+                            <button class="open-modal">
+                                <img
+                                    src="/assets/images/doc.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                                <h3 class="documentName">Lorem, ipsum.</h3>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -214,6 +181,22 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Modal -->
+        <div class="modal-overlay">
+            <div class="modal flow">
+                <h2>
+                    Contacta a uno de nuestros asesores expertos para que te
+                    ayude a llenar tu formato
+                </h2>
+                <a href="" class="btn">Contacta a un experto</a>
+                <a href="" class="document-download">Descargar documento</a>
+
+                <button class="modal__close-button jsModalClose">
+                    <div class="close-bar"></div>
+                </button>
+            </div>
+        </div>
 
         <!-- Clip path for the header -->
         <svg width="0" height="0" class="visually-hidden">

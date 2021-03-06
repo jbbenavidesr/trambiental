@@ -116,7 +116,12 @@ body {
 }
 
 section {
-    padding: 5em 0;
+    padding: 3em 0;
+}
+
+section header {
+    margin-bottom: 3em;
+    text-align: center;
 }
 
 h1,
@@ -283,6 +288,22 @@ h1 {
     justify-self: center;
 }
 
+.card {
+    text-align: center;
+}
+
+.card .icon {
+    max-width: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card .number {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-300);
+}
+
 @media (min-width: 40rem) {
     .primary-header__inner {
         padding-bottom: 4em;
@@ -312,22 +333,15 @@ h1 {
         align-self: end;
         justify-self: start;
     }
-}
 
-.card {
-    text-align: center;
-}
+    .card .description {
+        display: none;
+    }
 
-.card .icon {
-    max-width: 5em;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card .number {
-    font-size: var(--fs-900);
-    font-weight: var(--fw-700);
-    color: var(--clr-primary-300);
+    .card:hover .description,
+    .card:focus .description {
+        display: block;
+    }
 }
 
 .search-bar {

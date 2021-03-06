@@ -121,7 +121,6 @@ section {
 
 section header {
     margin-bottom: 3em;
-    text-align: center;
 }
 
 h1,
@@ -142,6 +141,11 @@ h1 {
 }
 
 /* ----- Utility classes ----- */
+
+.text-center {
+    text-align: center;
+}
+
 .container {
     max-width: var(--container-width, 60rem);
     margin-left: auto;
@@ -289,7 +293,7 @@ h1 {
 }
 
 .card {
-    text-align: center;
+    position: relative;
 }
 
 .card .icon {
@@ -333,14 +337,37 @@ h1 {
         align-self: end;
         justify-self: start;
     }
+}
 
+@media (hover: hover) and (min-width: 40rem) {
     .card .description {
-        display: none;
+        padding: 1em;
+        background: var(--clr-primary-400);
+        border-radius: 0.5rem;
+        border: var(--clr-accent-400) 4px solid;
+        color: var(--clr-neutral-100);
+        left: 1rem;
+        position: absolute;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.3s ease-in-out;
     }
 
-    .card:hover .description,
-    .card:focus .description {
-        display: block;
+    .card:hover .description {
+        transform: scaleY(1);
+
+        &::after {
+            display: block;
+            content: "";
+            position: absolute;
+            top: -10px;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+
+            border-bottom: 10px solid var(--clr-accent-400);
+        }
     }
 }
 

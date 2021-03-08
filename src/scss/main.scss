@@ -621,3 +621,11 @@ body.modal-is-open {
         }
     }
 }
+
+.error-page {
+    --flow-space: 2rem;
+    --container-width: 40rem;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    font-size: var(--fs-500);
+}

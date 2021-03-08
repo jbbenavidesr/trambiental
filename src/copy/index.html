@@ -52,221 +52,308 @@
         <script defer src="/js/main.min.js"></script>
     </head>
     <body>
-        <header class="primary-header">
+        <a class="[ skip-link ] [ btn ]" href="#main-content"
+            >Saltar al contenido</a
+        >
+        <header role="banner" class="primary-header">
             <div class="primary-header__inner bg-primary-400">
                 <a href="/" class="home-link">
-                    <p class="logo">Tr<span>am</span>biental</p></a
+                    <p class="logo">Tr<span>am</span>biental</p>
+                </a>
+                <nav
+                    class="[ nav ] [ primary-header__nav ]"
+                    aria-label="Primary"
                 >
-            </div>
-        </header>
-        <section class="hero bg-primary-300">
-            <div class="hero__content bg-primary-400">
-                <h1>Tu asesor legal online para cualquier trámite ambiental</h1>
-                <img src="/svg/Logo.svg" alt="" />
-            </div>
-            <a href="#formats" class="btn">Inicia tu asesoría</a>
-        </section>
-        <section class="instructions text-center">
-            <div class="container">
-                <header class="">
-                    <h2>Recibe tu asesoría en 3 sencillos pasos...</h2>
-                </header>
-                <div>
-                    <ol class="split" role="list">
-                        <li class="card flow">
-                            <img src="/svg/search-lg.svg" alt="" class="icon" />
-                            <div class="number">1</div>
-                            <h3>Busca tu trámite</h3>
-                            <p class="description">
-                                Busca entre los tramites ambientales que tenemos
-                                en nuestra plataforma y selecciona el que
-                                necesites.
-                            </p>
+                    <ul class="nav__list" role="list">
+                        <li>
+                            <a
+                                href="https://www.solames.co/quienes-somos/"
+                                target="_blank"
+                            >
+                                ¿Quiénes somos?
+                            </a>
                         </li>
-                        <li class="card flow">
-                            <img
-                                src="/svg/download-document.svg"
-                                alt=""
-                                class="icon"
-                            />
-                            <div class="number">2</div>
-                            <h3>Descarga el formulario</h3>
-                            <p class="description">
-                                Descarga de forma gratuita el formato que
-                                necesites directamente desde nuestra página web.
-                            </p>
-                        </li>
-                        <li class="card flow">
-                            <img
-                                src="/svg/chat-lawyer.svg"
-                                alt=""
-                                class="icon"
-                            />
-                            <div class="number">3</div>
-                            <h3>Consulta con tu asesor legal</h3>
-                            <p class="description">
-                                Diligencia el formulario con la ayuda de uno de
-                                nuestros asesores legales en todo tipo de
-                                trámites ambientales.
-                            </p>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-
-        <section
-            class="documents bg-primary-300 text-center"
-            tabindex="-1"
-            id="formats"
-        >
-            <div class="container">
-                <header class="">
-                    <h2>Busca el formato para el trámite que necesitas</h2>
-                </header>
-                <form
-                    onsubmit="event.preventDefault();"
-                    role="search"
-                    class="search-bar"
-                >
-                    <label for="search" class="visually-hidden"
-                        >Buscar documento</label
-                    >
-                    <input
-                        type="search"
-                        name="searchDocument"
-                        id="searchBar"
-                        placeholder="Busca el documento que necesitas"
-                    />
-                    <svg
-                        width="1rem"
-                        height="auto"
-                        viewBox="0 0 24 24"
-                        class="icon"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-search"
-                    >
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                </form>
-
-                <div class="document-container">
-                    <ul class="auto-grid text-center" role="list">
-                        <li
-                            class="document-file card"
-                            data-file="https://drive.google.com/uc?export=download&id=1WuRRwnio4CsvTBtqLwxA2NYBqaLw5aQz"
-                        >
-                            <button class="open-modal flow">
-                                <img src="/svg/doc.svg" alt="" class="icon" />
-                                <h3 class="documentName">
-                                    Solicitud o modificación de licencia
-                                    ambiental
-                                </h3>
-                            </button>
-                        </li>
-                        <li
-                            class="document-file card"
-                            data-file="https://drive.google.com/uc?export=download&id=1WwDCbFSYAg0IBa-NOd09cfMDIncSDu18"
-                        >
-                            <button class="open-modal flow">
-                                <img src="/svg/doc.svg" alt="" class="icon" />
-                                <h3 class="documentName">
-                                    Solicitud de concesión de aguas subterráneas
-                                </h3>
-                            </button>
-                        </li>
-                        <li
-                            class="document-file card"
-                            data-file="https://drive.google.com/uc?export=download&id=11FBX6TCLRtvAVFSaeWk6VwPGEFl_yW6b"
-                        >
-                            <button class="open-modal flow">
-                                <img src="/svg/doc.svg" alt="" class="icon" />
-                                <h3 class="documentName">
-                                    Solicitud de concesión de aguas
-                                    superficiales
-                                </h3>
-                            </button>
-                        </li>
-                        <li
-                            class="document-file card"
-                            data-file="https://drive.google.com/uc?export=download&id=1He19-2SrTRHyoVbYnmoIPPrcw4g5O9EA"
-                        >
-                            <button class="open-modal flow">
-                                <img src="/svg/doc.svg" alt="" class="icon" />
-                                <h3 class="documentName">
-                                    Solicitud de ocupación de cauces, playas y
-                                    lechos
-                                </h3>
-                            </button>
-                        </li>
-                        <li
-                            class="document-file card"
-                            data-file="https://drive.google.com/uc?export=download&id=1xq3i0fA3avKvheJsomh7DJXUDZZei-M5"
-                        >
-                            <button class="open-modal flow">
-                                <img src="/svg/doc.svg" alt="" class="icon" />
-                                <h3 class="documentName">
-                                    Solicitud de prospección y exploración de
-                                    aguas subterráneas
-                                </h3>
-                            </button>
-                        </li>
-                        <li
-                            class="document-file card"
-                            data-file="https://drive.google.com/uc?export=download&id=1yart7KKtafqUxbaPugNrWvXG05eMEXnF"
-                        >
-                            <button class="open-modal flow">
-                                <img src="/svg/doc.svg" alt="" class="icon" />
-                                <h3 class="documentName">
-                                    Solicitud de permiso de vertimientos
-                                </h3>
-                            </button>
-                        </li>
-                        <li
-                            class="document-file card"
-                            data-file="https://drive.google.com/uc?export=download&id=1obajvSS8auThEG6CXrg9JXoVbX5zrOya"
-                        >
-                            <button class="open-modal flow">
-                                <img src="/svg/doc.svg" alt="" class="icon" />
-                                <h3 class="documentName">
-                                    Solicitud de aprovechamiento forestal
-                                    doméstico y bosque natural
-                                </h3>
-                            </button>
-                        </li>
-                        <li
-                            class="document-file card"
-                            data-file="https://drive.google.com/uc?export=download&id=1zgXQG9_S-YAE-lyiqmmEJNJU-Y9Dtp_u"
-                        >
-                            <button class="open-modal flow">
-                                <img src="/svg/doc.svg" alt="" class="icon" />
-                                <h3 class="documentName">
-                                    Solicitud de aprovechamiento forestal
-                                    árboles aislados.
-                                </h3>
-                            </button>
-                        </li>
-                        <li
-                            class="document-file card"
-                            data-file="https://drive.google.com/uc?export=download&id=1llOO7LPDb49Q0nivJ5QBr5WFGMZKM26i"
-                        >
-                            <button class="open-modal flow">
-                                <img src="/svg/doc.svg" alt="" class="icon" />
-                                <h3 class="documentName">
-                                    Solicitud de permiso de emisiones
-                                    atmosféricas fuentes fijas
-                                </h3>
-                            </button>
+                        <li>
+                            <a href="#formats" aria-label="Buscar">
+                                <svg
+                                    width="1rem"
+                                    height="auto"
+                                    viewBox="0 0 24 24"
+                                    class="icon"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-search"
+                                >
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line
+                                        x1="21"
+                                        y1="21"
+                                        x2="16.65"
+                                        y2="16.65"
+                                    ></line>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </div>
+                </nav>
             </div>
-        </section>
+        </header>
+
+        <main id="main-content">
+            <section class="hero bg-primary-300">
+                <div class="hero__content bg-primary-400">
+                    <h1>
+                        Tu asesor legal online para cualquier trámite ambiental
+                    </h1>
+                    <img src="/svg/Logo.svg" alt="" />
+                </div>
+                <a href="#formats" class="btn">Inicia tu asesoría</a>
+            </section>
+            <section class="instructions text-center">
+                <div class="container">
+                    <header class="">
+                        <h2>Recibe tu asesoría en 3 sencillos pasos...</h2>
+                    </header>
+                    <div>
+                        <ol class="split" role="list">
+                            <li class="card flow">
+                                <img
+                                    src="/svg/search-lg.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                                <div class="number">1</div>
+                                <h3>Busca tu trámite</h3>
+                                <p class="description">
+                                    Busca entre los tramites ambientales que
+                                    tenemos en nuestra plataforma y selecciona
+                                    el que necesites.
+                                </p>
+                            </li>
+                            <li class="card flow">
+                                <img
+                                    src="/svg/download-document.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                                <div class="number">2</div>
+                                <h3>Descarga el formulario</h3>
+                                <p class="description">
+                                    Descarga de forma gratuita el formato que
+                                    necesites directamente desde nuestra página
+                                    web.
+                                </p>
+                            </li>
+                            <li class="card flow">
+                                <img
+                                    src="/svg/chat-lawyer.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                                <div class="number">3</div>
+                                <h3>Consulta con tu asesor legal</h3>
+                                <p class="description">
+                                    Diligencia el formulario con la ayuda de uno
+                                    de nuestros asesores legales en todo tipo de
+                                    trámites ambientales.
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            <section
+                class="documents bg-primary-300 text-center"
+                tabindex="-1"
+                id="formats"
+            >
+                <div class="container">
+                    <header class="">
+                        <h2>Busca el formato para el trámite que necesitas</h2>
+                    </header>
+                    <form
+                        onsubmit="event.preventDefault();"
+                        role="search"
+                        class="search-bar"
+                    >
+                        <label for="search" class="visually-hidden"
+                            >Buscar documento</label
+                        >
+                        <input
+                            type="search"
+                            name="searchDocument"
+                            id="searchBar"
+                            placeholder="Busca el documento que necesitas"
+                        />
+                        <svg
+                            width="1rem"
+                            height="auto"
+                            viewBox="0 0 24 24"
+                            class="icon"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-search"
+                        >
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </form>
+                    <div class="document-container">
+                        <ul class="auto-grid text-center" role="list">
+                            <li
+                                class="document-file card"
+                                data-file="https://drive.google.com/uc?export=download&id=1WuRRwnio4CsvTBtqLwxA2NYBqaLw5aQz"
+                            >
+                                <button class="open-modal flow">
+                                    <img
+                                        src="/svg/doc.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                    <h3 class="documentName">
+                                        Solicitud o modificación de licencia
+                                        ambiental
+                                    </h3>
+                                </button>
+                            </li>
+                            <li
+                                class="document-file card"
+                                data-file="https://drive.google.com/uc?export=download&id=1WwDCbFSYAg0IBa-NOd09cfMDIncSDu18"
+                            >
+                                <button class="open-modal flow">
+                                    <img
+                                        src="/svg/doc.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                    <h3 class="documentName">
+                                        Solicitud de concesión de aguas
+                                        subterráneas
+                                    </h3>
+                                </button>
+                            </li>
+                            <li
+                                class="document-file card"
+                                data-file="https://drive.google.com/uc?export=download&id=11FBX6TCLRtvAVFSaeWk6VwPGEFl_yW6b"
+                            >
+                                <button class="open-modal flow">
+                                    <img
+                                        src="/svg/doc.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                    <h3 class="documentName">
+                                        Solicitud de concesión de aguas
+                                        superficiales
+                                    </h3>
+                                </button>
+                            </li>
+                            <li
+                                class="document-file card"
+                                data-file="https://drive.google.com/uc?export=download&id=1He19-2SrTRHyoVbYnmoIPPrcw4g5O9EA"
+                            >
+                                <button class="open-modal flow">
+                                    <img
+                                        src="/svg/doc.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                    <h3 class="documentName">
+                                        Solicitud de ocupación de cauces, playas
+                                        y lechos
+                                    </h3>
+                                </button>
+                            </li>
+                            <li
+                                class="document-file card"
+                                data-file="https://drive.google.com/uc?export=download&id=1xq3i0fA3avKvheJsomh7DJXUDZZei-M5"
+                            >
+                                <button class="open-modal flow">
+                                    <img
+                                        src="/svg/doc.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                    <h3 class="documentName">
+                                        Solicitud de prospección y exploración
+                                        de aguas subterráneas
+                                    </h3>
+                                </button>
+                            </li>
+                            <li
+                                class="document-file card"
+                                data-file="https://drive.google.com/uc?export=download&id=1yart7KKtafqUxbaPugNrWvXG05eMEXnF"
+                            >
+                                <button class="open-modal flow">
+                                    <img
+                                        src="/svg/doc.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                    <h3 class="documentName">
+                                        Solicitud de permiso de vertimientos
+                                    </h3>
+                                </button>
+                            </li>
+                            <li
+                                class="document-file card"
+                                data-file="https://drive.google.com/uc?export=download&id=1obajvSS8auThEG6CXrg9JXoVbX5zrOya"
+                            >
+                                <button class="open-modal flow">
+                                    <img
+                                        src="/svg/doc.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                    <h3 class="documentName">
+                                        Solicitud de aprovechamiento forestal
+                                        doméstico y bosque natural
+                                    </h3>
+                                </button>
+                            </li>
+                            <li
+                                class="document-file card"
+                                data-file="https://drive.google.com/uc?export=download&id=1zgXQG9_S-YAE-lyiqmmEJNJU-Y9Dtp_u"
+                            >
+                                <button class="open-modal flow">
+                                    <img
+                                        src="/svg/doc.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                    <h3 class="documentName">
+                                        Solicitud de aprovechamiento forestal
+                                        árboles aislados.
+                                    </h3>
+                                </button>
+                            </li>
+                            <li
+                                class="document-file card"
+                                data-file="https://drive.google.com/uc?export=download&id=1llOO7LPDb49Q0nivJ5QBr5WFGMZKM26i"
+                            >
+                                <button class="open-modal flow">
+                                    <img
+                                        src="/svg/doc.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                    <h3 class="documentName">
+                                        Solicitud de permiso de emisiones
+                                        atmosféricas fuentes fijas
+                                    </h3>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <footer class="primary-footer bg-primary-400">
             <div class="primary-footer__inner split">

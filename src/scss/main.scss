@@ -290,10 +290,12 @@ a {
     padding: 2em;
 
     display: flex;
+    align-items: center;
 }
 
 .hero__content img {
     max-width: 4em;
+    max-height: 4em;
 }
 
 .hero .btn {
@@ -547,20 +549,26 @@ body.modal-is-open {
 }
 
 .contact {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    display: none;
 }
 
-.contact .btn {
-    background: transparent;
-    color: var(--clr-accent-400);
-    font-size: var(--fs-400);
-    display: inline-flex;
-    align-items: center;
-    border-radius: 1.5rem;
+@media (min-width: 40rem) {
+    .contact {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+    }
 
-    &::after {
-        content: "";
+    .contact .btn {
+        background: transparent;
+        color: var(--clr-accent-400);
+        font-size: var(--fs-400);
+        display: inline-flex;
+        align-items: center;
+        border-radius: 1.5rem;
+
+        &::after {
+            content: "";
+        }
     }
 }

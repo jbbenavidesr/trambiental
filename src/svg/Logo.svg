@@ -1,1 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="160.591" height="166.443" viewBox="0 0 160.591 166.443"><defs><style>.a{fill:#fff;}.b{fill:#a5c548;}.c{fill:#2aa555;}</style></defs><g transform="translate(-879.705 -727.779)"><path class="a" d="M182.549,420.749s45.633,20.686,49.546,67.712c0,0-27.52-13.258-48.363-9.664l-1.183-58.049" transform="translate(801.053 321.348)"/><path class="b" d="M119.584,529.272s33.258-102.5,148.653-46.124c0,0-39.547,119.236-148.653,46.124" transform="translate(772.059 341.229)"/><path class="c" d="M204.857,410.786,207,482.075s-58.387-2.85-88.577,61.776c0,0-43.572-102.652,86.43-133.066" transform="translate(768.295 316.993)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="160.591" height="auto" viewBox="0 0 160.591 166.443">
+    <defs>
+        <style>
+            .a {
+                fill: #fff;
+            }
+
+            .b {
+                fill: #a5c548;
+            }
+
+            .c {
+                fill: #2aa555;
+            }
+        </style>
+    </defs>
+    <g transform="translate(-879.705 -727.779)">
+        <path class="a" d="M182.549,420.749s45.633,20.686,49.546,67.712c0,0-27.52-13.258-48.363-9.664l-1.183-58.049" transform="translate(801.053 321.348)" />
+        <path class="b" d="M119.584,529.272s33.258-102.5,148.653-46.124c0,0-39.547,119.236-148.653,46.124" transform="translate(772.059 341.229)" />
+        <path class="c" d="M204.857,410.786,207,482.075s-58.387-2.85-88.577,61.776c0,0-43.572-102.652,86.43-133.066" transform="translate(768.295 316.993)" />
+    </g>
+</svg>

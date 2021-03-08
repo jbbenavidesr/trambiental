@@ -12,6 +12,7 @@
     --fw-700: 700;
     --fw-600: 600;
 
+    --fs-300: 0.825rem;
     --fs-400: 1rem;
     --fs-500: 1.5rem;
     --fs-600: 1.75rem;
@@ -134,6 +135,11 @@ h1 {
     font-weight: var(--fw-700);
 }
 
+a {
+    font-weight: var(--fw-700);
+    color: var(--clr-neutral-900);
+}
+
 @media (min-width: 40rem) {
     section {
         padding: 6em 0;
@@ -144,6 +150,10 @@ h1 {
 
 .text-center {
     text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
 
 .container {
@@ -259,7 +269,6 @@ h1 {
 .home-link {
     text-decoration: none;
     color: inherit;
-    display: inline-block;
 }
 
 .hero {
@@ -412,9 +421,6 @@ h1 {
 .hide {
     display: none;
 }
-.primary-footer {
-    padding: 5em 2em;
-}
 
 .modal-overlay {
     display: flex;
@@ -498,4 +504,44 @@ body.modal-is-open {
 .close-bar::after {
     content: "";
     transform: rotate(90deg) translateX(-1.5px);
+}
+
+.primary-footer {
+    padding: 1em 2em;
+}
+
+.primary-footer__inner {
+    padding: 4em 0;
+    margin-bottom: 3rem;
+}
+
+.footer-nav {
+    display: flex;
+    font-size: var(--fs-300);
+}
+
+.footer-nav dt {
+    font-weight: var(--fw-600);
+}
+
+.footer-nav > *:first-child {
+    margin-right: 4em;
+}
+
+.footer-social {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-social a {
+    font-weight: var(--fw-200);
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+    color: var(--clr-accent-400);
+}
+
+.copyright {
+    font-size: var(--fs-300);
 }

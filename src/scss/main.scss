@@ -554,6 +554,7 @@ body.modal-is-open {
 
 @media (min-width: 40rem) {
     .contact {
+        display: block;
         position: fixed;
         bottom: 2rem;
         right: 2rem;

@@ -545,3 +545,22 @@ body.modal-is-open {
 .copyright {
     font-size: var(--fs-300);
 }
+
+.contact {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.contact .btn {
+    background: transparent;
+    color: var(--clr-accent-400);
+    font-size: var(--fs-400);
+    display: inline-flex;
+    align-items: center;
+    border-radius: 1.5rem;
+
+    &::after {
+        content: "";
+    }
+}

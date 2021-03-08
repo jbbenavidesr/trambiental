@@ -173,7 +173,10 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: var(--flex-gap, 5em);
+}
+
+.split > * + * {
+    margin-top: var(--split-gap, 3rem);
 }
 
 .split > * {
@@ -183,6 +186,11 @@ a {
 @media (min-width: 40rem) {
     .split {
         flex-direction: row;
+    }
+
+    .split > * + * {
+        margin-top: 0;
+        margin-left: var(--split-gap, 3rem);
     }
 }
 
@@ -580,7 +588,10 @@ body.modal-is-open {
 
 .footer-social {
     display: flex;
-    gap: 2rem;
+}
+
+.footer-social > * + * {
+    margin-left: 2rem;
 }
 
 .footer-social a {

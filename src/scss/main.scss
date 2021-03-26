@@ -1,7 +1,7 @@
 /* Variables */
 :root {
     --clr-primary-400: #133c55;
-    --clr-primary-300: #748a9d;
+    --clr-primary-300: hsl(209, 25%, 74%);
     --clr-accent-700: #003a44;
     --clr-accent-400: #a5c548;
     --clr-accent-500: #2aa555;
@@ -364,7 +364,7 @@ a {
 }
 
 .card .icon {
-    max-width: 5em;
+    max-width: 4rem;
     margin-left: auto;
     margin-right: auto;
 }

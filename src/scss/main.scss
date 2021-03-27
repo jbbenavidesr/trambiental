@@ -181,6 +181,7 @@ a {
 
 .split > * {
     flex-basis: 100%;
+    max-width: 25rem;
 }
 
 @media (min-width: 40rem) {
@@ -605,6 +606,7 @@ body.modal-is-open {
 
 .copyright {
     font-size: var(--fs-300);
+    text-align: center;
 }
 
 .contact {
@@ -617,6 +619,10 @@ body.modal-is-open {
         position: fixed;
         bottom: 2rem;
         right: 2rem;
+    }
+
+    .copyright {
+        text-align: left;
     }
 
     .contact .btn {

@@ -611,32 +611,29 @@ body.modal-is-open {
 }
 
 .contact {
-    display: none;
+    display: grid;
+    position: sticky;
+    float: right;
+    bottom: 2rem;
+    right: 2rem;
+    background-image: linear-gradient(
+        112.42deg,
+        #22ce5a 0%,
+        #22ce5a 0.01%,
+        #30bf42 100%
+    );
+    color: var(--clr-neutral-100);
+    box-shadow: 0px 0px 8px 0px rgba(194, 194, 194, 1);
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 100%;
+    place-items: center;
+    margin-top: 1rem;
 }
 
 @media (min-width: 40rem) {
-    .contact {
-        display: block;
-        position: fixed;
-        bottom: 2rem;
-        right: 2rem;
-    }
-
     .copyright {
         text-align: left;
-    }
-
-    .contact .btn {
-        background: transparent;
-        color: var(--clr-accent-400);
-        font-size: var(--fs-400);
-        display: inline-flex;
-        align-items: center;
-        border-radius: 1.5rem;
-
-        &::after {
-            content: "";
-        }
     }
 }
 

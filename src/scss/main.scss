@@ -482,6 +482,22 @@ a {
     display: none;
 }
 
+.show-more {
+    background: transparent;
+    border: none;
+    font-weight: var(--fw-600);
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 2rem;
+    color: currentColor;
+
+    &:focus,
+    &:hover {
+        outline: 2px dotted currentColor;
+        outline-offset: 0.5rem;
+    }
+}
+
 .modal-overlay {
     display: flex;
     justify-content: center;

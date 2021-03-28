@@ -18,6 +18,14 @@
     });
 
     document.addEventListener("click", (event) => {
+        // Show more files
+        if (event.target.matches(".show-more")) {
+            for (let i = 0; i < docList.length; i++) {
+                docList[i].classList.remove("hide");
+            }
+            event.target.classList.add("hide");
+        }
+
         // Open Modal
         if (event.target.closest(".open-modal")) {
             let selectedDoc = event.target.closest(".document-file");

@@ -3,12 +3,34 @@
     const docDownload = document.querySelector(".document-download");
     const modalCta = document.querySelector(".modalCta");
 
+    function slugify(str) {
+        var map = {
+            "-": " ",
+            "-": "_",
+            a: "á|à|ã|â|ä|À|Á|Ã|Â|Ä",
+            e: "é|è|ê|ë|É|È|Ê|Ë",
+            i: "í|ì|î|ï|Í|Ì|Î|Ï",
+            o: "ó|ò|ô|õ|ö|Ó|Ò|Ô|Õ|Ö",
+            u: "ú|ù|û|ü|Ú|Ù|Û|Ü",
+            c: "ç|Ç",
+            n: "ñ|Ñ",
+        };
+
+        for (var pattern in map) {
+            str = str.replace(new RegExp(map[pattern], "g"), pattern);
+        }
+
+        return str;
+    }
+
     document.querySelector("#searchBar").addEventListener("keyup", (evt) => {
-        const query = evt.target.value.toLowerCase();
+        const query = slugify(evt.target.value.toLowerCase());
         for (let i = 0; i < docList.length; i++) {
-            const name = docList[i]
-                .querySelector(".documentName")
-                .textContent.toLowerCase();
+            const name = slugify(
+                docList[i]
+                    .querySelector(".documentName")
+                    .textContent.toLowerCase()
+            );
             if (name.includes(query)) {
                 docList[i].classList.remove("hide");
             } else {

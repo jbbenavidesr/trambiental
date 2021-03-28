@@ -213,7 +213,7 @@ a {
 .visually-hidden {
     border: 0;
     clip: rect(0 0 0 0);
-    height: auto;
+    height: 1px;
     margin: 0;
     overflow: hidden;
     padding: 0;
@@ -337,7 +337,7 @@ a {
     grid-gap: 1em;
     align-items: center;
 
-    background-image: url("/img/bg-hero-sm.webp");
+    background-image: url("/img/bg-hero-sm.jpg");
     background-size: cover;
     background-position: center;
 }
